@@ -88,6 +88,14 @@ module.exports = {
       },
     },
     {
+      files: ['polaris-migrator/src/**/*.{ts,tsx}'],
+      rules: {
+        'import/no-default-export': 'off',
+        'import/no-extraneous-dependencies': 'off',
+        '@shopify/jsx-no-hardcoded-content': 'off',
+      },
+    },
+    {
       files: ['polaris-react/src/**/*.{ts,tsx}'],
       extends: ['plugin:@shopify/typescript-type-checking'],
       rules: {
